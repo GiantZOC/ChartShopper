@@ -21,12 +21,6 @@
           <a class="nav-link" aria-current="page" href="/availablecharts">available charts</a>
           <a class="nav-link" aria-current="page" href="/shoppingcart">shopping cart</a>
           <a class="nav-link" aria-current="page" href="/purchasedcharts">purchased charts</a>
-          <li class="nav-item">
-            
-          </li>
-          <li class="nav-item">
-            
-          </li>
         </div>
 
         <ul class="navbar-nav ms-auto">
