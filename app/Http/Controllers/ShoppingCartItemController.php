@@ -12,13 +12,6 @@ use Illuminate\Database\Eloquent\Builder;
 
 class ShoppingCartItemController extends Controller
 {
-    // all PurchasedProduct
-    // public function index()
-    // {
-    //     $Patterns = PurchasedProduct::all()->sortByDesc('id')->toArray();
-    //     return array_reverse($Patterns);
-    // }
-
     // add ShoppingCartItem
     public function get()
     {        
@@ -30,7 +23,6 @@ class ShoppingCartItemController extends Controller
 
         return $shoppingCartItems; 
  
-        //return response()->json('The ShoppingCartItem successfully added');
     }
  
     // add ShoppingCartItem to shopping cart
@@ -50,15 +42,17 @@ class ShoppingCartItemController extends Controller
         }
 
         //see if the user has already purchased or added item to cart
-        //$alreadyExists = ShoppingCartItem::where('chart_product', $id)->where('')
+        $alreadyPurchased = false;
+        $shoppingCarts = ShoppingCart::with('ShoppingCartItem.ChartProduct')->where('user_id', $userid);
+        foreach($shoppingCarts as $shoppingCart){
+            foreach($shoppingCart->ShoppingCartItem as $shoppingCartItem){
+                if($shoppingCartItem->chart_product_id == $id){
+                    $alreadyPurchased = true;
+                }
+            }
+        }
 
-        $count = ShoppingCart::where('user_id', $userid)->whereHas('ShoppingCartItem', function (Builder $query) use ($id) {
-            $query->where('chart_product_id', $id);
-        }, '>=', 1)->count();
-
-
-        Log::debug("Exists" . $count);
-        if($count == 0){
+        if(!$alreadyPurchased){
             //add the item to the cart
             $shoppingcartitem = ShoppingCartItem::create([
                 'chart_product_id' => $id,
