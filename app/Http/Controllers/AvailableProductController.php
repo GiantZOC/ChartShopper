@@ -10,14 +10,6 @@ use Symfony\Component\ErrorHandler\Debug;
 
 class AvailableProductController extends Controller
 {
-
-
-    public function unsetValue(array $array, $value, $strict = TRUE)
-    {
-        
-        return $array;
-    }
-
     // get all available charts for purchase
     public function get()
     {
