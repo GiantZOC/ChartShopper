@@ -17,7 +17,7 @@ class ChartProduct extends Model
     protected $table = 'chart_product';
 
     protected $fillable = [
-        'chart_product_id',
+        'id',
         'name',
         'longitude',
         'latitude',

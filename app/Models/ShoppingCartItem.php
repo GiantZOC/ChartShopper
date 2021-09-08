@@ -21,10 +21,10 @@ class ShoppingCartItem extends Model
 
 
     public function ShoppingCart(){
-        return $this->belongsTo(ShoppingCart::class, 'shopping_cart_id');
+        return $this->belongsTo(ShoppingCart::class);
     }
 
     public function ChartProduct(){
-        return $this->hasOne(ChartProduct::class, 'chart_product_id');
+        return $this->hasOne(ChartProduct::class, 'id', 'chart_product_id');
     }
 }

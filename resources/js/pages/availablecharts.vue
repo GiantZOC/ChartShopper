@@ -10,12 +10,12 @@
             </tr>
             </thead>
             <tbody>
-            <tr v-for="chart in charts" :key="chart.chart_product_id">
-                <td>{{ chart.chart_product_id }}</td>
+            <tr v-for="chart in charts" :key="chart.id">
+                <td>{{ chart.id }}</td>
                 <td>{{ chart.name }}</td>
                 <td>
                     <div class="btn-group" role="group">
-                        <button class="btn btn-primary" @click="addToCart(chart.chart_product_id)">Add to Cart</button>
+                        <button class="btn btn-primary" @click="addToCart(chart.id)">Add to Cart</button>
                     </div>
                 </td>
             </tr>

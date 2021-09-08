@@ -12,7 +12,7 @@
                 </thead>
                 <tbody>
                 <tr v-for="item in shoppingCart[0].shopping_cart_item" :key="item.id">
-                    <td>{{ item.id }}</td>
+                    <td>{{ item.chart_product.id }}</td>
                     <td>{{ item.chart_product.name }}</td>
                     <td>
                         <div class="btn-group" role="group">

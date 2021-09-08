@@ -10,8 +10,8 @@
             </tr>
             </thead>
             <tbody>
-            <tr v-for="chart in charts" :key="chart.chart_product_id">
-                <td>{{ chart.chart_product_id }}</td>
+            <tr v-for="chart in charts" :key="chart.id">
+                <td>{{ chart.id }}</td>
                 <td>{{ chart.name }}</td>
             </tr>
             </tbody>

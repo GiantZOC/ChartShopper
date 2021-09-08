@@ -40,63 +40,63 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $chart = ChartProduct::create([
-            'chart_product_id' => 1,
+            'id' => 1,
             'name' => 'US Charts',
             'latitude' => 1000,
             'longitude' => 1000
         ]);
 
         $chart = ChartProduct::create([
-            'chart_product_id' => 2,
+            'id' => 2,
             'name' => 'Mexico Charts',
             'latitude' => 1000,
             'longitude' => 1000
         ]);
 
         $chart = ChartProduct::create([
-            'chart_product_id' => 3,
+            'id' => 3,
             'name' => 'Brazil Charts',
             'latitude' => 1000,
             'longitude' => 1000
         ]);
 
         $chart = ChartProduct::create([
-            'chart_product_id' => 4,
+            'id' => 4,
             'name' => 'United Kingdom Charts',
             'latitude' => 1000,
             'longitude' => 1000
         ]);
 
         $chart = ChartProduct::create([
-            'chart_product_id' => 5,
+            'id' => 5,
             'name' => 'Australia Charts',
             'latitude' => 1000,
             'longitude' => 1000
         ]);
 
         $chart = ChartProduct::create([
-            'chart_product_id' => 6,
+            'id' => 6,
             'name' => 'Norway Charts',
             'latitude' => 1000,
             'longitude' => 1000
         ]);
 
         $chart = ChartProduct::create([
-            'chart_product_id' => 7,
+            'id' => 7,
             'name' => 'Sweden Charts',
             'latitude' => 1000,
             'longitude' => 1000
         ]);
 
         $chart = ChartProduct::create([
-            'chart_product_id' => 8,
+            'id' => 8,
             'name' => 'Japan Charts',
             'latitude' => 1000,
             'longitude' => 1000
         ]);
 
         $chart = ChartProduct::create([
-            'chart_product_id' => 9,
+            'id' => 9,
             'name' => 'Canada Charts',
             'latitude' => 1000,
             'longitude' => 1000

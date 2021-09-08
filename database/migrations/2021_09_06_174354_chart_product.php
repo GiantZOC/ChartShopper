@@ -14,7 +14,7 @@ class Chartproduct extends Migration
     public function up()
     {
         Schema::create('chart_product', function (Blueprint $table) {
-            $table->id('chart_product_id');
+            $table->id();
             $table->string('name')->unique();;
             $table->float('latitude', 10, 6);
             $table->float('longitude', 10, 6);
