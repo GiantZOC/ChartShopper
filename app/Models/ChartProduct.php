@@ -15,4 +15,11 @@ class ChartProduct extends Model
      * @var string
      */
     protected $table = 'chart_product';
+
+    protected $fillable = [
+        'chart_product_id',
+        'name',
+        'longitude',
+        'latitude',
+    ];
 }

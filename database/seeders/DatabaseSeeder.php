@@ -22,56 +22,87 @@ class DatabaseSeeder extends Seeder
         // Category::truncate();
 
         $user = User::factory()->create([
+            'id' => 1,
             'name' => 'Test User 1',
             'email' => 'test1@test.com'
         ]);
 
         $user = User::factory()->create([
+            'id' => 2,
             'name' => 'Test User 2',
             'email' => 'test2@test.com'
         ]);
 
         $user = User::factory()->create([
+            'id' => 3,
             'name' => 'Test User 3',
             'email' => 'test3@test.com'
         ]);
 
-        $chart = ChartProduct::factory()->create([
-            'name' => 'US Charts'
+        $chart = ChartProduct::create([
+            'chart_product_id' => 1,
+            'name' => 'US Charts',
+            'latitude' => 1000,
+            'longitude' => 1000
         ]);
 
-        $chart = ChartProduct::factory()->create([
-            'name' => 'Mexico Charts'
+        $chart = ChartProduct::create([
+            'chart_product_id' => 2,
+            'name' => 'Mexico Charts',
+            'latitude' => 1000,
+            'longitude' => 1000
         ]);
 
-        $chart = ChartProduct::factory()->create([
-            'name' => 'Brazil Charts'
+        $chart = ChartProduct::create([
+            'chart_product_id' => 3,
+            'name' => 'Brazil Charts',
+            'latitude' => 1000,
+            'longitude' => 1000
         ]);
 
-        $chart = ChartProduct::factory()->create([
-            'name' => 'United Kingdom Charts'
+        $chart = ChartProduct::create([
+            'chart_product_id' => 4,
+            'name' => 'United Kingdom Charts',
+            'latitude' => 1000,
+            'longitude' => 1000
         ]);
 
-        $chart = ChartProduct::factory()->create([
-            'name' => 'Australia Charts'
+        $chart = ChartProduct::create([
+            'chart_product_id' => 5,
+            'name' => 'Australia Charts',
+            'latitude' => 1000,
+            'longitude' => 1000
         ]);
 
-        $chart = ChartProduct::factory()->create([
-            'name' => 'Norway Charts'
+        $chart = ChartProduct::create([
+            'chart_product_id' => 6,
+            'name' => 'Norway Charts',
+            'latitude' => 1000,
+            'longitude' => 1000
         ]);
 
-        $chart = ChartProduct::factory()->create([
-            'name' => 'Sweden Charts'
-        ]);
-        $chart = ChartProduct::factory()->create([
-            'name' => 'Japan Charts'
-        ]);
-
-        $chart = ChartProduct::factory()->create([
-            'name' => 'Canada Charts'
+        $chart = ChartProduct::create([
+            'chart_product_id' => 7,
+            'name' => 'Sweden Charts',
+            'latitude' => 1000,
+            'longitude' => 1000
         ]);
 
-        
+        $chart = ChartProduct::create([
+            'chart_product_id' => 8,
+            'name' => 'Japan Charts',
+            'latitude' => 1000,
+            'longitude' => 1000
+        ]);
+
+        $chart = ChartProduct::create([
+            'chart_product_id' => 9,
+            'name' => 'Canada Charts',
+            'latitude' => 1000,
+            'longitude' => 1000
+        ]);
+
+
 
         // $category = Category::factory()->create([
         //     'name' => 'Family',

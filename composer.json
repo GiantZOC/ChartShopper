@@ -13,12 +13,12 @@
         "laravel/socialite": "^5.2",
         "laravel/tinker": "^2.6",
         "laravel/ui": "^3.3",
-        "tymon/jwt-auth": "dev-develop"
+        "tymon/jwt-auth": "dev-develop",
+        "fakerphp/faker": "^1.9.1"
     },
     "require-dev": {
         "doctrine/dbal": "^2.13",
         "facade/ignition": "^2.5",
-        "fakerphp/faker": "^1.9.1",
         "laravel/dusk": "^6.17",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",
